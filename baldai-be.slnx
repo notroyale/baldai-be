@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="baldai-be.Api/baldai-be.Api.csproj" />
+  <Project Path="baldai-be.Application/baldai-be.Application.csproj" />
+  <Project Path="baldai-be.Domain/baldai-be.Domain.csproj" />
+  <Project Path="baldai-be.Infrastructure/baldai-be.Infrastructure.csproj" />
+</Solution>

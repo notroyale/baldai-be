@@ -42,7 +42,9 @@ public class GetProductsQueryHandler : IRequestHandler<GetProductsQuery, PagedRe
                 p.Title,
                 p.Price,
                 string.IsNullOrEmpty(p.ImagePaths) ? "" : p.ImagePaths.Split(',', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault() ?? "",
-                p.Status.ToString()
+                p.Status.ToString(),
+                p.Category,
+                p.IsNew
             ))
             .ToListAsync(cancellationToken);
 

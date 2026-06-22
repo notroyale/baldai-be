@@ -13,6 +13,8 @@ public class Product
     public decimal Price { get; set; }
     public string ImagePaths { get; set; } = string.Empty; // JSON/CSV list of local paths
     public ShippingOption Shipping { get; set; }
+    public string Category { get; set; } = string.Empty;
+    public bool IsNew { get; set; }
     public byte[] RowVersion { get; set; } = null!;
     public string? RejectReason { get; set; }
 

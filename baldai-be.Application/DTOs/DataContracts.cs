@@ -17,7 +17,7 @@ public record ProductCreateDto(
     string ShippingOption
 );
 
-public record ProductSummaryDto(Guid Id, string Title, decimal Price, string PrimaryImage, string Status);
+public record ProductSummaryDto(Guid Id, string Title, decimal Price, string PrimaryImage, string Status, string Category, bool IsNew);
 public record PagedResult<T>(List<T> Items, int TotalCount);
 
 public record SellerDto(Guid Id, string Name, decimal Rating);
